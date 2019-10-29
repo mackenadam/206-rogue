@@ -57,9 +57,11 @@ header {
 }
 
 header h1 {
+	width: 100%;
 	margin: 0;
 	padding: 40px 0 15px;
 	border-bottom: 3px solid #77a466;
+	text-align: center;
 }
 header h1 span {
 	color: #77a466;
@@ -93,7 +95,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -130,10 +132,6 @@ header nav ul li a{
 	padding: 10px 0;
 }
 
-.section-two {
-	padding: 10px 0;
-}
-
 .section-two h4,
 .section-three h4 {
 	padding: 10px 0;
@@ -161,6 +159,7 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
+	width: 90%;
 	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
@@ -178,126 +177,19 @@ footer span {
 
 
 /* Tablet styles */
-@media screen and (min-width: 768px;) {
-	@font-face{
-		font-family: 'Wisdom Script';
-		src: url('../fonts/wisdom-script.otf') format('opentype');
-	}
 
-	body {
-		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	}
-
-	.container{
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4 {
-		color: black;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
+@media all and (min-width: 768px) {
 	h1 {
-		font-size: 30px;
-	}
-	h2 {
-	    font-size: 24px;
-	}
-	h3 {
-		font-size: 18px;
-	}
-	h4 {
-		font-size: 12px;
-	}
-
-	p {
-		font-size: 14px;
-		line-height: 21px;
-	    padding: 0 30px;
-	}
-
-	/*The widths are in a percentage!*/
-	header {
-		height: 110px;
-		border-bottom: 3px solid #77a466;
-		margin: 0 auto;
-	}
-
-	header h1 {
-		float: left;
-		margin: 0;
-		padding: 38px 0;
-	}
-	header h1 span {
-		color: #77a466;
-	}
-
-	header nav {
-		float: right;
-		padding: 46px 0;
-	}
-	header nav ul {
-		margin: 0;
-		padding: 0;
-	}
-	header nav ul li {
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 14px;
-		padding: 0 10px;
-		display: inline;
-	}
-	header nav ul li a{
-		text-decoration: none;
-		color:#77a466;
-	}
-
-	/*The widths are in a percentage!*/
-	.top-section,
-	.bottom-section {
-		margin: 0 auto;
-		clear: both;
-	}
-
-	.main-image {
-		height: auto;
-		float: left;
-	}
-	.main-image img {
-		width: 100%;
-		border-bottom: 3px solid #77a466;
-	}
-
-	.main-title {
-		height: auto;
-		float: left;
-	}
-	.main-title h3 {
-		text-align: left;
-		padding: 5px 0;
-		color: #77a466;
-	}
-	.main-title p {
-		padding: 0;
-		font-size: 16px;
-		line-height: 25px;
+		font-size: 2em;
 	}
 
 	.section-one,
 	.section-two,
 	.section-three {
 		width: 33%;
-		height: auto;
+		height: 300px;
 		float: left;
 		border-top: 1px solid #eee;
-	}
-
-	.section-one h4 {
-		padding: 10px 0;
 	}
 
 	.section-two {
@@ -305,115 +197,60 @@ footer span {
 		border-right: 1px solid #eee;
 	}
 
-	.section-two h4,
-	.section-three h4 {
-		padding: 10px 30px;
-	}
-
-	.menu {
-		list-style: none;
-		padding: 0;
-	}
-	.menu li {
-		padding: 10px 0;
-		color:#77a466;
-	}
-
-	.reviews {
-		color: #333;
-		font-size: 16px;
-		line-height: 21px;
-	}
-
-	.address {
-		font-size: 16px;
-		line-height: 24px;
-	}
-
-	/*The widths are in a percentage!*/
-	footer {
-		height: 50px;
-		border-top: 3px solid #eee;
-		margin: 0 auto;
-		clear: both;
-		text-align: center;
-	}
-	footer span {
-		font-family: 'Wisdom Script', cursive;
-		text-transform: lowercase;
-		color: #77a466;
-		font-size: 14px;
+	.bottom-section h4, .menu, .reviews, .address {
+		padding: 5px;
 	}
 
 }
 
 /* Desktop styles */
-@media screen and (min-width: 1200px;) {
-	@font-face{
-		font-family: 'Wisdom Script';
-		src: url('../fonts/wisdom-script.otf') format('opentype');
-	}
 
-	body {
-		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	}
+@media all and (min-width: 1200px) {
 
-	.container{
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4 {
-		color: black;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
 	h1 {
-		font-size: 30px;
+		font-size: 2.2em;
 	}
 	h2 {
-	    font-size: 24px;
+	    font-size: 1.7em;
 	}
 	h3 {
-		font-size: 18px;
+		font-size: 1.4em;
 	}
 	h4 {
-		font-size: 12px;
+		font-size: 1em;
 	}
 
 	p {
-		font-size: 14px;
-		line-height: 21px;
+		font-size: 1.2em;
+		line-height: 1.4em;
 	    padding: 0 30px;
 	}
 
-	/*The widths are in a percentage!*/
 	header {
 		height: 110px;
 		border-bottom: 3px solid #77a466;
 		margin: 0 auto;
+		display: block;
 	}
 
 	header h1 {
+		width: auto;
 		float: left;
 		margin: 0;
 		padding: 38px 0;
-	}
-	header h1 span {
-		color: #77a466;
+		text-align: left;
 	}
 
 	header nav {
 		float: right;
 		padding: 46px 0;
 	}
-	header nav ul {
-		margin: 0;
-		padding: 0;
+
+	 header nav ul {
+		display: flex;
+		justify-content: space-between;
 	}
+
 	header nav ul li {
 		text-transform: uppercase;
 		font-weight: 700;
@@ -421,12 +258,7 @@ footer span {
 		padding: 0 10px;
 		display: inline;
 	}
-	header nav ul li a{
-		text-decoration: none;
-		color:#77a466;
-	}
 
-	/*The widths are in a percentage!*/
 	.top-section,
 	.bottom-section {
 		margin: 0 auto;
@@ -434,12 +266,9 @@ footer span {
 	}
 
 	.main-image {
+		width: 100%;
 		height: auto;
 		float: left;
-	}
-	.main-image img {
-		width: 100%;
-		border-bottom: 3px solid #77a466;
 	}
 
 	.main-title {
@@ -461,7 +290,7 @@ footer span {
 	.section-two,
 	.section-three {
 		width: 33%;
-		height: auto;
+		height: 300px;
 		float: left;
 		border-top: 1px solid #eee;
 	}
@@ -500,7 +329,6 @@ footer span {
 		line-height: 24px;
 	}
 
-	/*The widths are in a percentage!*/
 	footer {
 		height: 50px;
 		border-top: 3px solid #eee;
