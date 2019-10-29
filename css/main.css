@@ -125,7 +125,7 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	height: auto;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #77a466;
 }
 
 .section-one h4 {
@@ -161,7 +161,7 @@ header nav ul li a{
 footer {
 	width: 90%;
 	height: 50px;
-	border-top: 3px solid #eee;
+	border-top: 1px solid #77a466;
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
@@ -189,12 +189,12 @@ footer span {
 		width: 33%;
 		height: 300px;
 		float: left;
-		border-top: 1px solid #eee;
+		border-top: 1px solid #77a466;
 	}
 
 	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
+		border-left: 1px solid #77a466;
+		border-right: 1px solid #77a466;
 	}
 
 	.bottom-section h4, .menu, .reviews, .address {
@@ -292,7 +292,7 @@ footer span {
 		width: 33%;
 		height: 300px;
 		float: left;
-		border-top: 1px solid #eee;
+		border-top: 1px solid #77a466;
 	}
 
 	.section-one h4 {
@@ -300,8 +300,8 @@ footer span {
 	}
 
 	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
+		border-left: 1px solid #77a466;
+		border-right: 1px solid #77a466;
 	}
 
 	.section-two h4,
@@ -329,9 +329,13 @@ footer span {
 		line-height: 24px;
 	}
 
+	.bottom-section h4, .menu, .reviews, .address {
+		padding: 10px;
+	}
+
 	footer {
 		height: 50px;
-		border-top: 3px solid #eee;
+		border-top: 1px solid #77a466;
 		margin: 0 auto;
 		clear: both;
 		text-align: center;
